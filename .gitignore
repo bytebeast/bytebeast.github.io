@@ -8,5 +8,6 @@ vendor/
 .claude/
 Gemfile.lock
 
-# ~/.gitignore_global ignores *.jpg; the project screenshots must be committed.
+# ~/.gitignore_global ignores *.jpg and *.woff2; these assets must be committed.
 !assets/img/projects/*.jpg
+!assets/fonts/*.woff2
