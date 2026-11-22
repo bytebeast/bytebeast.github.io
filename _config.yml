@@ -1,0 +1,23 @@
+title: bytebeast
+description: ~30 years in Unix/Linux, SRE, DevOps, and infrastructure engineering.
+url: https://bytebeast.github.io
+baseurl: ""
+author: bytebeast
+
+# Shown verbatim in the header; it is the GitHub profile name, deliberately encoded.
+display_name: ND c2 MT c2 Nj k2 ZT Zm Mj A0 Nj Y1 Nm M2 OT c4
+intro: ~30 years in Unix/Linux, SRE, DevOps, and infrastructure engineering. It's more than a career; it's been my lifelong passion.
+github: bytebeast
+
+permalink: /blog/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - docs/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - mise.toml

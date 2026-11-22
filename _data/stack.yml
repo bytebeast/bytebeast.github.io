@@ -1,0 +1,51 @@
+# icon: file in _includes/icons without .svg. No icon renders a letter badge.
+- group: Cloud & IaC
+  items:
+    - { name: AWS, icon: aws }
+    - { name: Amazon RDS, icon: aws }
+    - { name: Terraform, icon: terraform }
+    - { name: Terragrunt }
+- group: Containers
+  items:
+    - { name: Kubernetes, icon: kubernetes }
+    - { name: Helm, icon: helm }
+- group: Linux/Unix
+  items:
+    - { name: Solaris }
+    - { name: Red Hat, icon: redhat }
+    - { name: CentOS, icon: centos }
+    - { name: AlmaLinux, icon: almalinux }
+    - { name: Ubuntu, icon: ubuntu }
+    - { name: Amazon Linux, icon: aws }
+- group: Languages
+  items:
+    - { name: Go, icon: go }
+    - { name: Python, icon: python }
+    - { name: Java, icon: java }
+    - { name: Bash, icon: gnubash }
+- group: Data & streaming
+  items:
+    - { name: MySQL, icon: mysql }
+    - { name: Redis, icon: redis }
+    - { name: Elasticsearch, icon: elasticsearch }
+    - { name: Kafka, icon: apachekafka }
+    - { name: ZooKeeper }
+- group: Networking & security
+  items:
+    - { name: Nginx, icon: nginx }
+    - { name: Apache, icon: apache }
+    - { name: HAProxy, icon: haproxy }
+    - { name: Check Point }
+- group: Observability
+  items:
+    - { name: Prometheus, icon: prometheus }
+    - { name: Grafana, icon: grafana }
+- group: CI/CD
+  items:
+    - { name: Jenkins, icon: jenkins }
+    - { name: Harness }
+- group: Editors & AI
+  items:
+    - { name: Vim, icon: vim }
+    - { name: Neovim, icon: neovim }
+    - { name: Claude, icon: claude }

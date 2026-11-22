@@ -1,0 +1,12 @@
+- name: kissaten.nvim
+  url: https://bytebeast.github.io/kissaten.nvim/
+  image: /assets/img/projects/kissaten.jpg
+  description: Coffee-house colorscheme for Neovim, Vim and VS Code. Five WCAG-checked styles, 62 plugin integrations and 28 matching tool themes.
+- name: winteriscoming.nvim
+  url: https://bytebeast.github.io/winteriscoming.nvim/
+  image: /assets/img/projects/winteriscoming.jpg
+  description: Port of John Papa's Winter is Coming theme to Neovim and LazyVim, with 60+ plugin integrations and themes for 25+ tools.
+- name: check-endpoint
+  url: https://bytebeast.github.io/check-endpoint/
+  image: /assets/img/projects/check-endpoint.jpg
+  description: Live per-phase HTTP timing probe. DNS, TCP, TLS, TTFB, body transfer and streaming chunk timing, streamed as each phase completes.

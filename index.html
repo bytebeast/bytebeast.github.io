@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<section class="intro">
+  <p>{{ site.intro }}</p>
+</section>
+
+<h2 id="projects">projects</h2>
+<div class="projects">
+  {% for p in site.data.projects %}
+  <a class="card" href="{{ p.url }}">
+    <img src="{{ p.image | relative_url }}" alt="Screenshot of {{ p.name }}" loading="lazy" width="1200" height="750">
+    <div class="card-body">
+      <h3>{{ p.name }}</h3>
+      <p>{{ p.description }}</p>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+<h2 id="stack">stack</h2>
+<div class="stack">
+  {% for g in site.data.stack %}
+  <section class="group">
+    <h3>{{ g.group }}</h3>
+    <ul>
+      {% for item in g.items %}
+      <li>
+        {%- if item.icon -%}
+          {%- capture icon %}icons/{{ item.icon }}.svg{% endcapture -%}
+          {% include {{ icon }} %}
+        {%- else -%}
+          <span class="badge" aria-hidden="true">{{ item.name | slice: 0 }}</span>
+        {%- endif -%}
+        {{ item.name }}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+</div>
+
+<h2 id="blog">blog</h2>
+<ul class="posts">
+  {% for post in site.posts limit: 3 %}
+  <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+<p class="more"><a href="{{ '/blog/' | relative_url }}">all posts</a></p>
