@@ -6,3 +6,4 @@ vendor/
 .bundle/
 .superpowers/
 .claude/
+Gemfile.lock
