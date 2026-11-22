@@ -7,3 +7,6 @@ vendor/
 .superpowers/
 .claude/
 Gemfile.lock
+
+# ~/.gitignore_global ignores *.jpg; the project screenshots must be committed.
+!assets/img/projects/*.jpg
