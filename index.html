@@ -8,15 +8,30 @@ layout: default
 <h2 id="projects">projects</h2>
 <div class="projects">
   {% for p in site.data.projects %}
-  <a class="card" href="{{ p.url }}">
-    <img src="{{ p.image | relative_url }}" alt="Screenshot of {{ p.name }}" loading="lazy" width="1200" height="750">
-    <div class="card-body">
+  <div class="card">
+    <button class="zoom" type="button" aria-label="Enlarge screenshot of {{ p.name }}">
+      <img src="{{ p.image | relative_url }}" alt="Screenshot of {{ p.name }}" loading="lazy" width="1200" height="750">
+    </button>
+    <a class="card-body" href="{{ p.url }}">
       <h3>{{ p.name }}</h3>
       <p>{{ p.description }}</p>
-    </div>
-  </a>
+    </a>
+  </div>
   {% endfor %}
 </div>
+
+<dialog class="lightbox" id="lightbox"><img alt=""></dialog>
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = lightbox.querySelector('img');
+  document.querySelectorAll('.zoom').forEach((btn) => btn.addEventListener('click', () => {
+    const img = btn.querySelector('img');
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightbox.showModal();
+  }));
+  lightbox.addEventListener('click', () => lightbox.close());
+</script>
 
 <h2 id="stack">stack</h2>
 <div class="stack">
