@@ -10,3 +10,7 @@
   url: https://bytebeast.github.io/check-endpoint/
   image: /assets/img/projects/check-endpoint.jpg
   description: Live per-phase HTTP timing probe. DNS, TCP, TLS, TTFB, body transfer and streaming chunk timing, streamed as each phase completes.
+- name: tzc
+  url: https://bytebeast.github.io/tzc/
+  image: /assets/img/projects/tzc.jpg
+  description: Paste a timestamp, get your local time. Reads UTC, ISO-8601, epoch and syslog stamps, converts to several zones at once, with an fzf zone picker.
